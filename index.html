@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mariam Awny | Flutter Developer</title>
+  <!-- Google Fonts: Inter & Outfit for luxury modern mobile app typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Feather Icons or inline SVG -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Outer Presentation Container for Desktop/Tablet Presentation -->
+  <div class="presentation-wrapper">
+    <!-- Desktop Side Panel / Brand Showcase -->
+    <aside class="desktop-side-panel">
+      <div class="brand-badge">
+        <span class="status-dot"></span> Available for Opportunities
+      </div>
+      <h1 class="desktop-title">Mariam Awny</h1>
+      <h2 class="desktop-subtitle">Flutter Developer</h2>
+      <p class="desktop-description">
+        Crafting high-performance, elegant cross-platform mobile applications with Flutter, Dart, and Clean Architecture.
+      </p>
+
+      <div class="desktop-highlights">
+        <div class="highlight-item">
+          <span class="highlight-value">5+</span>
+          <span class="highlight-label">Featured Apps</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-value">DEPI</span>
+          <span class="highlight-label">Certified Dev</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-value">100%</span>
+          <span class="highlight-label">Clean Code</span>
+        </div>
+      </div>
+
+      <div class="desktop-quick-links">
+        <a href="mailto:mariam.awny.dev@gmail.com" class="desktop-btn primary-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Get In Touch
+        </a>
+        <a href="https://github.com/mariamawny" target="_blank" rel="noopener" class="desktop-btn secondary-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          GitHub Profile
+        </a>
+      </div>
+
+      <div class="desktop-hint">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+        <span>Interact with the mobile app on the right</span>
+      </div>
+    </aside>
+
+    <!-- Smartphone Mobile Application Frame -->
+    <main class="device-frame">
+      <!-- Phone Hardware Bezel Elements -->
+      <div class="device-notch">
+        <div class="camera-lens"></div>
+        <div class="speaker-grille"></div>
+      </div>
+
+      <!-- Main Mobile Application Viewport -->
+      <div class="app-container">
+
+        <!-- App Status Bar -->
+        <header class="app-status-bar">
+          <span class="status-time" id="status-time">09:41</span>
+          <div class="status-icons">
+            <svg class="status-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.5c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.2 19.64 10.55 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+            <svg class="status-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4C7.31 4 3.07 5.9 0 8.98L12 21 24 8.98C20.93 5.9 16.69 4 12 4z"/></svg>
+            <div class="battery-icon">
+              <div class="battery-level"></div>
+            </div>
+          </div>
+        </header>
+
+        <!-- App View Header Bar -->
+        <div class="app-top-bar">
+          <div class="app-brand">
+            <div class="app-logo-avatar">MA</div>
+            <div class="app-brand-info">
+              <span class="app-brand-name">Mariam Awny</span>
+              <span class="app-brand-status"><span class="tiny-dot"></span> Flutter Developer</span>
+            </div>
+          </div>
+          <button class="app-action-icon" id="btn-quick-contact" aria-label="Contact">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </button>
+        </div>
+
+        <!-- Scrollable Screen Content Container -->
+        <div class="app-content-body">
+
+          <!-- ================= HOME SCREEN ================= -->
+          <section id="screen-home" class="app-screen active">
+            <div class="hero-card">
+              <div class="hero-chip">
+                <span class="pulse-dot"></span> Welcome to my Mobile Portfolio
+              </div>
+              <p class="greeting-sub">Hello, I'm</p>
+              <h2 class="hero-name">Mariam Awny</h2>
+              <h3 class="hero-role">Flutter Developer</h3>
+              <p class="hero-summary">
+                Software Engineer specializing in building scalable, responsive, and beautifully designed cross-platform mobile applications using Flutter, Dart, and Clean Architecture.
+              </p>
+
+              <div class="hero-tech-pills">
+                <span class="tech-pill">Flutter</span>
+                <span class="tech-pill">Dart</span>
+                <span class="tech-pill">Clean Architecture</span>
+                <span class="tech-pill">Bloc / Cubit</span>
+                <span class="tech-pill">Firebase</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+
+              <div class="hero-actions">
+                <button class="app-btn primary-btn nav-trigger" data-target="projects">
+                  <span>View Projects</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+                <a href="assets/images/Mariam_Awny_Flutter_Developer_CV.pdf - Google Chrome 9_18_2026 1_03_35 PM.png" target="_blank" class="app-btn secondary-btn" id="btn-download-cv">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>CV Document</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Overview Cards -->
+            <div class="section-label">HIGHLIGHTS</div>
+            <div class="grid-2col">
+              <div class="app-card highlight-card">
+                <div class="card-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </div>
+                <div class="card-metric">5+</div>
+                <div class="card-title">Mobile Projects</div>
+                <div class="card-desc">Production-ready Flutter apps</div>
+              </div>
+
+              <div class="app-card highlight-card">
+                <div class="card-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <div class="card-metric">DEPI</div>
+                <div class="card-title">Specialist Track</div>
+                <div class="card-desc">Digital Egypt Pioneers</div>
+              </div>
+            </div>
+
+            <!-- Featured App Widget -->
+            <div class="section-label">FEATURED APPLICATION</div>
+            <div class="app-card featured-project-card project-card-trigger" data-project-id="fruit-hub">
+              <div class="card-badge">E-Commerce</div>
+              <h4 class="project-title">Fruit Hub App</h4>
+              <p class="project-subtitle">Full e-commerce experience with Flutter, Firebase Auth, Firestore, PayMob Payment & Cubit state management.</p>
+              <div class="project-tags">
+                <span class="mini-tag">Flutter</span>
+                <span class="mini-tag">PayMob</span>
+                <span class="mini-tag">Firebase</span>
+                <span class="mini-tag">Clean Arch</span>
+              </div>
+              <div class="card-footer-action">
+                <span>Explore App Case Study</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= ABOUT SCREEN ================= -->
+          <section id="screen-about" class="app-screen">
+            <div class="screen-header">
+              <h2 class="screen-title">About Me</h2>
+              <p class="screen-subtitle">Software Engineer & Flutter Mobile Specialist</p>
+            </div>
+
+            <div class="app-card profile-bio-card">
+              <p class="bio-text">
+                I am a dedicated **Flutter Developer** with a solid foundation in computer science and mobile application development. Focused on creating seamless cross-platform experiences for iOS and Android, I write clean, maintainable code adhering to **Clean Architecture** principles and robust state management.
+              </p>
+            </div>
+
+            <div class="section-label">CORE SPECIALIZATIONS</div>
+            <div class="services-list">
+              <div class="app-card service-card">
+                <div class="service-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </div>
+                <div class="service-content">
+                  <h4>Mobile Development</h4>
+                  <p>Building responsive, pixel-perfect iOS & Android interfaces with Flutter and Dart.</p>
+                </div>
+              </div>
+
+              <div class="app-card service-card">
+                <div class="service-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </div>
+                <div class="service-content">
+                  <h4>State Management & Architecture</h4>
+                  <p>Proficient with Bloc, Cubit, Provider, and Clean Architecture for maintainable codebases.</p>
+                </div>
+              </div>
+
+              <div class="app-card service-card">
+                <div class="service-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                </div>
+                <div class="service-content">
+                  <h4>Backend Services & APIs</h4>
+                  <p>Firebase integration (Auth & Firestore), REST API handling with Dio/Http, and JSON parsing.</p>
+                </div>
+              </div>
+
+              <div class="app-card service-card">
+                <div class="service-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                </div>
+                <div class="service-content">
+                  <h4>Local Storage Solutions</h4>
+                  <p>Efficient offline data storage using Hive, SQLite, and SharedPreferences.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience & Education Segment -->
+            <div class="section-label">EDUCATION & TRAININGS</div>
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content app-card">
+                  <span class="timeline-date">2020 — 2024</span>
+                  <h4>B.Sc. in Management Information Systems</h4>
+                  <p class="timeline-org">Higher Institute for Specific Studies</p>
+                  <p class="timeline-desc">Grade: Excellent with Honors (Grade: ممتاز مع مرتبة الشرف).</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content app-card">
+                  <span class="timeline-date">Training Program</span>
+                  <h4>Mobile Application Development (Flutter)</h4>
+                  <p class="timeline-org">Digital Egypt Pioneers Initiative (DEPI)</p>
+                  <p class="timeline-desc">Comprehensive training covering Dart, Flutter Framework, REST APIs, State Management, and Clean Architecture.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content app-card">
+                  <span class="timeline-date">Certification</span>
+                  <h4>Flutter & Dart Complete Development</h4>
+                  <p class="timeline-org">Professional Development Program</p>
+                  <p class="timeline-desc">Hands-on project development building production-level mobile applications.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= SKILLS SCREEN ================= -->
+          <section id="screen-skills" class="app-screen">
+            <div class="screen-header">
+              <h2 class="screen-title">Skills & Tech</h2>
+              <p class="screen-subtitle">Tools, Technologies & Architectures</p>
+            </div>
+
+            <div class="skills-group">
+              <div class="skills-category-title">PROGRAMMING LANGUAGES</div>
+              <div class="chips-flex">
+                <div class="skill-chip"><span class="chip-dot"></span> Dart</div>
+                <div class="skill-chip"><span class="chip-dot"></span> C++</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Java</div>
+                <div class="skill-chip"><span class="chip-dot"></span> HTML / CSS</div>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <div class="skills-category-title">FRAMEWORKS & MOBILE</div>
+              <div class="chips-flex">
+                <div class="skill-chip accent-chip"><span class="chip-dot"></span> Flutter Framework</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Material Design</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Cupertino Widgets</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Custom Widgets & Animations</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Responsive UI Design</div>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <div class="skills-category-title">STATE MANAGEMENT & ARCHITECTURE</div>
+              <div class="chips-flex">
+                <div class="skill-chip accent-chip"><span class="chip-dot"></span> Bloc</div>
+                <div class="skill-chip accent-chip"><span class="chip-dot"></span> Cubit</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Provider</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Clean Architecture</div>
+                <div class="skill-chip"><span class="chip-dot"></span> MVVM Pattern</div>
+                <div class="skill-chip"><span class="chip-dot"></span> OOP & SOLID Principles</div>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <div class="skills-category-title">BACKEND, APIS & DATABASES</div>
+              <div class="chips-flex">
+                <div class="skill-chip"><span class="chip-dot"></span> Firebase Authentication</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Cloud Firestore</div>
+                <div class="skill-chip"><span class="chip-dot"></span> RESTful APIs Integration</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Dio Network Client</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Http Package</div>
+                <div class="skill-chip"><span class="chip-dot"></span> JSON Parsing</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Hive DB</div>
+                <div class="skill-chip"><span class="chip-dot"></span> SQLite</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Shared Preferences</div>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <div class="skills-category-title">DEVELOPMENT TOOLS</div>
+              <div class="chips-flex">
+                <div class="skill-chip"><span class="chip-dot"></span> Git & GitHub</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Android Studio</div>
+                <div class="skill-chip"><span class="chip-dot"></span> VS Code</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Postman API Tool</div>
+                <div class="skill-chip"><span class="chip-dot"></span> Figma</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= PROJECTS SCREEN ================= -->
+          <section id="screen-projects" class="app-screen">
+            <div class="screen-header">
+              <h2 class="screen-title">Projects</h2>
+              <p class="screen-subtitle">Applications Built & Architected</p>
+            </div>
+
+            <div class="projects-feed">
+
+              <!-- Project 1: Fruit Hub -->
+              <div class="app-card project-feed-card project-card-trigger" data-project-id="fruit-hub">
+                <div class="project-image-preview">
+                  <img src="assets/images/Mariam_Awny_Flutter_Developer_CV.pdf - Google Chrome 9_18_2026 1_03_35 PM.png" alt="Fruit Hub Preview" class="project-img-thumb" loading="lazy">
+                  <span class="project-category-badge">E-Commerce App</span>
+                </div>
+                <div class="project-card-body">
+                  <h3 class="project-card-title">Fruit Hub App</h3>
+                  <p class="project-card-excerpt">A full-featured mobile e-commerce platform allowing users to browse fresh items, manage carts, perform authentication, and complete checkout with PayMob.</p>
+                  <div class="project-tech-badges">
+                    <span class="mini-tag">Flutter</span>
+                    <span class="mini-tag">Firebase</span>
+                    <span class="mini-tag">Cubit</span>
+                    <span class="mini-tag">PayMob</span>
+                    <span class="mini-tag">Clean Arch</span>
+                  </div>
+                  <button class="app-btn card-action-btn">
+                    <span>View App Details</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Project 2: Bookly App -->
+              <div class="app-card project-feed-card project-card-trigger" data-project-id="bookly">
+                <div class="project-image-preview">
+                  <img src="assets/images/Mariam_Awny_Flutter_Developer_CV.pdf - Google Chrome 9_18_2026 1_03_56 PM.png" alt="Bookly App Preview" class="project-img-thumb" loading="lazy">
+                  <span class="project-category-badge">Reading & Books</span>
+                </div>
+                <div class="project-card-body">
+                  <h3 class="project-card-title">Bookly App</h3>
+                  <p class="project-card-excerpt">A sleek digital book library application fetching live book collections, categories, and previews using the Google Books API with Cubit & Clean Architecture.</p>
+                  <div class="project-tech-badges">
+                    <span class="mini-tag">Flutter</span>
+                    <span class="mini-tag">Google Books API</span>
+                    <span class="mini-tag">Dio</span>
+                    <span class="mini-tag">Cubit</span>
+                    <span class="mini-tag">Clean Arch</span>
+                  </div>
+                  <button class="app-btn card-action-btn">
+                    <span>View App Details</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Project 3: Notes App -->
+              <div class="app-card project-feed-card project-card-trigger" data-project-id="notes">
+                <div class="project-image-preview">
+                  <img src="assets/images/Mariam_Awny_Flutter_Developer_CV.pdf - Google Chrome 9_18_2026 1_04_08 PM.png" alt="Notes App Preview" class="project-img-thumb" loading="lazy">
+                  <span class="project-category-badge">Productivity</span>
+                </div>
+                <div class="project-card-body">
+                  <h3 class="project-card-title">Notes App</h3>
+                  <p class="project-card-excerpt">A fast local notes organizer supporting note creation, editing, custom color coding, and deletion powered by Hive local database and Cubit.</p>
+                  <div class="project-tech-badges">
+                    <span class="mini-tag">Flutter</span>
+                    <span class="mini-tag">Dart</span>
+                    <span class="mini-tag">Hive Local DB</span>
+                    <span class="mini-tag">Cubit</span>
+                  </div>
+                  <button class="app-btn card-action-btn">
+                    <span>View App Details</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Project 4: Weather App -->
+              <div class="app-card project-feed-card project-card-trigger" data-project-id="weather">
+                <div class="project-image-preview">
+                  <img src="assets/images/Mariam_Awny_Flutter Developer CV.pdf - Google Chrome 9_15_2026 8_20_59 PM.png" alt="Weather App Preview" class="project-img-thumb" loading="lazy">
+                  <span class="project-category-badge">Utility & API</span>
+                </div>
+                <div class="project-card-body">
+                  <h3 class="project-card-title">Weather App</h3>
+                  <p class="project-card-excerpt">Real-time weather query application featuring live atmospheric data, dynamic theme color shifts based on weather status, and API state handling.</p>
+                  <div class="project-tech-badges">
+                    <span class="mini-tag">Flutter</span>
+                    <span class="mini-tag">OpenWeather API</span>
+                    <span class="mini-tag">Dio</span>
+                    <span class="mini-tag">Cubit</span>
+                  </div>
+                  <button class="app-btn card-action-btn">
+                    <span>View App Details</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Project 5: Flash Chat App -->
+              <div class="app-card project-feed-card project-card-trigger" data-project-id="chat">
+                <div class="project-image-preview">
+                  <img src="assets/images/Mariam_Awny_Flutter Developer CV.pdf - Google Chrome 9_15_2026 8_21_19 PM.png" alt="Flash Chat Preview" class="project-img-thumb" loading="lazy">
+                  <span class="project-category-badge">Social & Firebase</span>
+                </div>
+                <div class="project-card-body">
+                  <h3 class="project-card-title">Flash Chat App</h3>
+                  <p class="project-card-excerpt">Instant real-time messaging application with user authentication, secure group chats, and Cloud Firestore live stream synchronization.</p>
+                  <div class="project-tech-badges">
+                    <span class="mini-tag">Flutter</span>
+                    <span class="mini-tag">Firebase Auth</span>
+                    <span class="mini-tag">Cloud Firestore</span>
+                  </div>
+                  <button class="app-btn card-action-btn">
+                    <span>View App Details</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ================= CONTACT SCREEN ================= -->
+          <section id="screen-contact" class="app-screen">
+            <div class="screen-header">
+              <h2 class="screen-title">Get In Touch</h2>
+              <p class="screen-subtitle">Let's Connect & Collaborate</p>
+            </div>
+
+            <div class="contact-card-group">
+
+              <a href="mailto:mariam.awny.dev@gmail.com" class="app-card contact-item-card">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">Email Address</span>
+                  <span class="contact-value">mariam.awny.dev@gmail.com</span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+
+              <a href="tel:+201208920197" class="app-card contact-item-card">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">Phone Number</span>
+                  <span class="contact-value">+20 120 892 0197</span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+
+              <a href="https://linkedin.com/in/mariam-awny" target="_blank" rel="noopener" class="app-card contact-item-card">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">linkedin.com/in/mariam-awny</span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+
+              <a href="https://github.com/mariamawny" target="_blank" rel="noopener" class="app-card contact-item-card">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">github.com/mariamawny</span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+
+              <div class="app-card contact-item-card">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Cairo, Egypt</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="contact-action-box">
+              <a href="mailto:mariam.awny.dev@gmail.com" class="app-btn primary-btn full-width">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Send Direct Email</span>
+              </a>
+            </div>
+          </section>
+
+        </div> <!-- End app-content-body -->
+
+        <!-- Bottom Application Navigation Bar -->
+        <nav class="bottom-nav">
+          <div class="nav-indicator"></div>
+
+          <button class="nav-item active" data-tab="home">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span class="nav-label">Home</span>
+          </button>
+
+          <button class="nav-item" data-tab="about">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span class="nav-label">About</span>
+          </button>
+
+          <button class="nav-item" data-tab="projects">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            <span class="nav-label">Projects</span>
+          </button>
+
+          <button class="nav-item" data-tab="skills">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span class="nav-label">Skills</span>
+          </button>
+
+          <button class="nav-item" data-tab="contact">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span class="nav-label">Contact</span>
+          </button>
+        </nav>
+
+        <!-- Dynamic Full-Screen Project Case Study Modal Sheet -->
+        <div id="project-modal" class="modal-overlay" aria-hidden="true">
+          <div class="modal-sheet">
+            <div class="modal-handle"></div>
+            <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+
+            <div class="modal-scroll-content">
+              <div class="modal-header-badge" id="modal-category">Category</div>
+              <h2 class="modal-project-title" id="modal-title">Project Title</h2>
+              <p class="modal-project-subtitle" id="modal-subtitle">Short description</p>
+
+              <div class="modal-image-container">
+                <img src="" alt="Project Image" id="modal-image" class="modal-main-img">
+              </div>
+
+              <!-- Problem -> Solution -> Result -->
+              <div class="case-study-grid">
+                <div class="case-box problem-box">
+                  <div class="case-box-title">
+                    <span class="case-icon">⚠️</span> THE PROBLEM
+                  </div>
+                  <p id="modal-problem" class="case-box-text">Problem description</p>
+                </div>
+
+                <div class="case-box solution-box">
+                  <div class="case-box-title">
+                    <span class="case-icon">💡</span> THE SOLUTION
+                  </div>
+                  <p id="modal-solution" class="case-box-text">Solution description</p>
+                </div>
+
+                <div class="case-box result-box">
+                  <div class="case-box-title">
+                    <span class="case-icon">🎯</span> THE RESULT
+                  </div>
+                  <p id="modal-result" class="case-box-text">Result description</p>
+                </div>
+              </div>
+
+              <!-- Key Features -->
+              <div class="modal-section-title">KEY FEATURES</div>
+              <ul class="modal-features-list" id="modal-features">
+                <!-- Dynamically populated -->
+              </ul>
+
+              <!-- Technologies Badges -->
+              <div class="modal-section-title">TECHNOLOGIES USED</div>
+              <div class="modal-tech-flex" id="modal-tech">
+                <!-- Dynamically populated -->
+              </div>
+
+              <!-- Role & Engineering Approach -->
+              <div class="modal-section-title">MY ROLE & ARCHITECTURE</div>
+              <p class="modal-role-text" id="modal-role">Architected and developed the mobile application following Clean Architecture, handling UI components, state management using Cubit, and integrating backend services.</p>
+
+              <!-- External Links -->
+              <div class="modal-actions" id="modal-actions">
+                <a href="#" target="_blank" rel="noopener" class="app-btn primary-btn full-width" id="modal-github-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>View Repository on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- End app-container -->
+    </main>
+  </div> <!-- End presentation-wrapper -->
+
+  <script src="script.js"></script>
+</body>
+</html>
