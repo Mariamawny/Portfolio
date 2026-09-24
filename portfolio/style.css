@@ -968,6 +968,30 @@ img {
   margin-bottom: 0.8rem;
 }
 
+.project-links-row {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.mini-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 4px 10px;
+  background: var(--accent-surface);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 6px;
+  transition: var(--transition-fast);
+}
+
+.mini-github-link:hover {
+  background: rgba(0, 229, 255, 0.18);
+  border-color: var(--accent);
+}
+
 .card-action-btn {
   background: var(--surface);
   border: 1px solid var(--border);

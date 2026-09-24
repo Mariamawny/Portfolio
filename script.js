@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       technologies: ['Flutter', 'Dart', 'Clean Architecture', 'Cubit', 'REST APIs', 'Widgets'],
       role: 'Designed and engineered the mobile app architecture, interactive itinerary widgets, and state management flow.',
-      github: 'https://github.com/mariamawny'
+      github: 'https://github.com/Mariamawny/travel_planner_app'
     },
     'uni2career': {
       title: 'Uni2Career — AI Recommendation App',
@@ -63,7 +63,43 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       technologies: ['Flutter', 'Dart', 'State Management', 'Custom UI Components', 'Local Storage'],
       role: 'Built mobile app interface, audio playback flows, and interactive lesson state management.',
-      github: 'https://github.com/mariamawny'
+      github: 'https://github.com/Mariamawny/codealpha_tasks_Languadge-Learining-App'
+    },
+    'flashcard': {
+      title: 'FlashCard Learning App',
+      category: 'Education & Memory Training',
+      subtitle: 'Interactive flashcard study tool for effective memorization.',
+      image: 'assets/images/projects/language_learning.png',
+      problem: 'Students and self-learners need an efficient way to revise vocabulary and key facts through spaced active recall.',
+      solution: 'Developed an interactive FlashCard mobile app supporting custom card decks, flip animations, and self-assessment scores.',
+      result: 'Enhances retention speed and study efficiency for learners.',
+      features: [
+        'Custom flashcard deck creation and category organization',
+        'Smooth 3D flip card animations in Flutter',
+        'Active recall scoring and review tracking',
+        'Clean lightweight UI built with Dart and Flutter'
+      ],
+      technologies: ['Flutter', 'Dart', 'Custom Animations', 'Local DB'],
+      role: 'Sole developer creating custom flip card animations and state storage logic.',
+      github: 'https://github.com/Mariamawny/codealpha_tasks_FlashCard'
+    },
+    'medical-equipment': {
+      title: 'Smart Medical Equipment Management',
+      category: 'Healthcare & Enterprise Solution',
+      subtitle: 'Comprehensive lifecycle management platform for medical devices.',
+      image: 'assets/images/projects/uni2career.png',
+      problem: 'Hospitals and healthcare facilities require reliable tracking of medical equipment status, maintenance schedules, and lifecycle logs.',
+      solution: 'Built a smart management application for medical equipment tracking lifecycle phases, maintenance alerts, and status reports.',
+      result: 'Streamlines medical inventory oversight and preventive maintenance tracking.',
+      features: [
+        'Equipment registry and status lifecycle dashboard',
+        'Maintenance scheduling and operational alert logs',
+        'Search, filter, and detailed device specification view',
+        'Secure data synchronization and clean user interface'
+      ],
+      technologies: ['Flutter', 'Dart', 'REST APIs', 'Clean Architecture', 'Cubit'],
+      role: 'Mobile developer architecting equipment lifecycle UI and state flows.',
+      github: 'https://github.com/Mariamawny/Smart-Medical-Equipment-Lifecycle-Management'
     },
     'days10': {
       title: 'Days 10 Challenge App',
@@ -81,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       technologies: ['Flutter', 'Dart', 'Cubit', 'Hive Local DB', 'Clean UI'],
       role: 'Sole developer building UI, challenge state triggers, and local storage persistence.',
-      github: 'https://github.com/mariamawny'
+      github: 'https://github.com/Mariamawny/ten_days_flutter_app'
     }
   };
 
