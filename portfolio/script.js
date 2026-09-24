@@ -59,7 +59,14 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Language Learning App',
       category: 'Education & Interactive Learning',
       subtitle: 'Engaging mobile language learning platform with interactive exercises.',
-      image: 'assets/images/projects/language_learning.png',
+      image: 'assets/images/projects/language_learning/lang_1.png',
+      images: [
+        'assets/images/projects/language_learning/lang_1.png',
+        'assets/images/projects/language_learning/lang_2.png',
+        'assets/images/projects/language_learning/lang_3.png',
+        'assets/images/projects/language_learning/lang_4.png',
+        'assets/images/projects/language_learning/lang_5.png'
+      ],
       problem: 'Language learners need an interactive, structured mobile app to practice vocabulary and pronunciation consistently.',
       solution: 'Created an intuitive mobile learning application with bite-sized lessons, interactive practice modules, and progress tracking.',
       result: 'Provides language learners with an engaging daily practice environment.',
