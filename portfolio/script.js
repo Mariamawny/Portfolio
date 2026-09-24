@@ -12,7 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Travel Planner App',
       category: 'Travel & Itinerary Management',
       subtitle: 'Comprehensive mobile travel planning and itinerary management application.',
-      image: 'assets/images/projects/travel_planner.png',
+      image: 'assets/images/projects/travel_planner/tp_1.png',
+      images: [
+        'assets/images/projects/travel_planner/tp_1.png',
+        'assets/images/projects/travel_planner/tp_2.png',
+        'assets/images/projects/travel_planner/tp_3.png',
+        'assets/images/projects/travel_planner/tp_4.png',
+        'assets/images/projects/travel_planner/tp_5.png',
+        'assets/images/projects/travel_planner/tp_6.png',
+        'assets/images/projects/travel_planner/tp_7.png'
+      ],
       problem: 'Travelers struggle to organize trip itineraries, budget details, and destination schedules in a single accessible mobile interface.',
       solution: 'Developed a mobile travel application enabling travelers to create, customize, and manage trip schedules with interactive visual flight, hotel, and destination cards.',
       result: 'Simplifies trip planning into an intuitive, centralized mobile experience for stress-free travel.',
@@ -239,9 +248,31 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalCategory) modalCategory.textContent = data.category;
     if (modalTitle) modalTitle.textContent = data.title;
     if (modalSubtitle) modalSubtitle.textContent = data.subtitle;
-    if (modalImage) {
-      modalImage.src = data.image;
-      modalImage.alt = `${data.title} Screenshot`;
+
+    const modalImageContainer = document.querySelector('.modal-image-container');
+    if (modalImageContainer) {
+      modalImageContainer.innerHTML = '';
+      if (data.images && data.images.length > 0) {
+        const galleryWrapper = document.createElement('div');
+        galleryWrapper.className = 'screenshot-gallery';
+        data.images.forEach((imgUrl, idx) => {
+          const imgItem = document.createElement('div');
+          imgItem.className = 'gallery-item';
+          const img = document.createElement('img');
+          img.src = imgUrl;
+          img.alt = `${data.title} Screenshot ${idx + 1}`;
+          img.className = 'gallery-img';
+          imgItem.appendChild(img);
+          galleryWrapper.appendChild(imgItem);
+        });
+        modalImageContainer.appendChild(galleryWrapper);
+      } else if (data.image) {
+        const img = document.createElement('img');
+        img.src = data.image;
+        img.alt = `${data.title} Screenshot`;
+        img.className = 'modal-main-img';
+        modalImageContainer.appendChild(img);
+      }
     }
     if (modalProblem) modalProblem.textContent = data.problem;
     if (modalSolution) modalSolution.textContent = data.solution;
