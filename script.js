@@ -5,100 +5,82 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // ------------------------------------------------------------------
-  // 1. PROJECT DATA (Strictly sourced from verified CV data)
+  // 1. PROJECT DATA (Strictly sourced from verified project portfolio)
   // ------------------------------------------------------------------
   const projectsData = {
-    'fruit-hub': {
-      title: 'Fruit Hub App',
-      category: 'E-Commerce Mobile Application',
-      subtitle: 'Complete online grocery & fresh fruits ordering platform.',
-      image: 'assets/images/Mariam_Awny_Flutter_Developer_CV.pdf - Google Chrome 9_18_2026 1_03_35 PM.png',
-      problem: 'Consumers need an intuitive, secure mobile interface to order fresh produce and track orders effortlessly.',
-      solution: 'Architected and built a mobile application with custom onboarding screens, Firebase Authentication, Cloud Firestore product feeds, and PayMob payment gateway integration.',
-      result: 'Delivered a smooth shopping experience with real-time checkout and state management powered by Cubit.',
+    'travel-planner': {
+      title: 'Travel Planner App',
+      category: 'Travel & Itinerary Management',
+      subtitle: 'Comprehensive mobile travel planning and itinerary management application.',
+      image: 'assets/images/projects/travel_planner.png',
+      problem: 'Travelers struggle to organize trip itineraries, budget details, and destination schedules in a single accessible mobile interface.',
+      solution: 'Developed a mobile travel application enabling travelers to create, customize, and manage trip schedules with interactive visual flight, hotel, and destination cards.',
+      result: 'Simplifies trip planning into an intuitive, centralized mobile experience for stress-free travel.',
       features: [
-        'Custom Onboarding & Authentication flow via Firebase Auth',
-        'Product discovery with category filtering & real-time search',
-        'Shopping cart state management using Cubit & Clean Architecture',
-        'Integrated PayMob payment gateway for card/e-wallet transactions',
-        'Firestore live database synchronization for orders'
+        'Interactive trip creation and customizable itinerary timeline',
+        'Flight, hotel, and destination activity planning cards',
+        'Budget tracking and destination management interface',
+        'Clean, responsive mobile UI built with Flutter and Dart',
+        'Modular state management for reactive screen updates'
       ],
-      technologies: ['Flutter', 'Dart', 'Firebase Auth', 'Cloud Firestore', 'PayMob', 'Cubit', 'Clean Architecture'],
-      role: 'Designed architecture, implemented UI screens, managed state with Cubit, and integrated Firebase and PayMob APIs.',
+      technologies: ['Flutter', 'Dart', 'Clean Architecture', 'Cubit', 'REST APIs', 'Widgets'],
+      role: 'Designed and engineered the mobile app architecture, interactive itinerary widgets, and state management flow.',
       github: 'https://github.com/mariamawny'
     },
-    'bookly': {
-      title: 'Bookly App',
-      category: 'Reading & Digital Books Library',
-      subtitle: 'Digital book explorer & previewer powered by Google Books API.',
-      image: 'assets/images/Mariam_Awny_Flutter_Developer_CV.pdf - Google Chrome 9_18_2026 1_03_56 PM.png',
-      problem: 'Readers need a convenient app to discover popular books, read instant sample previews, and explore recommendations.',
-      solution: 'Developed a feature-rich Flutter application connecting to the Google Books API with Dio HTTP client, following MVVM / Clean Architecture and Cubit state management.',
-      result: 'Users can quickly search, filter, and view book details and free sample previews with high response speed.',
+    'uni2career': {
+      title: 'Uni2Career — AI Recommendation App',
+      category: 'AI & Career Development Platform',
+      subtitle: 'Smart recommendation platform guiding students from university to career success.',
+      image: 'assets/images/projects/uni2career.png',
+      problem: 'University students and graduates often lack clear guidance on career paths aligned with their skills, interests, and academic background.',
+      solution: 'Architected and built Uni2Career, an AI-powered cross-platform mobile application providing tailored career recommendations, skill gap analysis, and learning roadmaps.',
+      result: 'Empowers students with actionable career insights and personalized pathways from university to professional employment.',
       features: [
-        'Live integration with Google Books REST API',
-        'Featured books slider & top recommendations list',
-        'Search screen with instant dynamic query results',
-        'In-app PDF / Web sample preview viewer',
-        'Clean Architecture layer separation (Data, Domain, Presentation)'
+        'AI-driven career path matching based on student profile and skills',
+        'Personalized skill progression roadmaps and course suggestions',
+        'Interactive candidate dashboard and assessment tracking',
+        'Sleek modern user interface with smooth Flutter transitions',
+        'Clean state management architecture'
       ],
-      technologies: ['Flutter', 'Dart', 'Google Books REST API', 'Dio', 'Cubit', 'Clean Architecture'],
-      role: 'Built the complete app architecture, integrated external APIs, and crafted custom smooth transitions.',
+      technologies: ['Flutter', 'Dart', 'FlutterFlow', 'AI Recommendation Engine', 'Firebase', 'REST APIs'],
+      role: 'Lead Mobile Developer designing user experience, FlutterFlow architecture, API integrations, and user workflow.',
       github: 'https://github.com/mariamawny'
     },
-    'notes': {
-      title: 'Notes App',
-      category: 'Productivity & Local Database',
-      subtitle: 'Fast, offline-first personal notes management application.',
-      image: 'assets/images/Mariam_Awny_Flutter_Developer_CV.pdf - Google Chrome 9_18_2026 1_04_08 PM.png',
-      problem: 'Users require a quick, private offline note-taking app to organize daily thoughts and tasks without relying on internet access.',
-      solution: 'Built an offline-first Flutter application utilizing Hive NoSQL local database for high-performance CRUD note operations.',
-      result: 'Provides instant local persistence and seamless note customization with custom colors and editing capabilities.',
+    'language-learning': {
+      title: 'Language Learning App',
+      category: 'Education & Interactive Learning',
+      subtitle: 'Engaging mobile language learning platform with interactive exercises.',
+      image: 'assets/images/projects/language_learning.png',
+      problem: 'Language learners need an interactive, structured mobile app to practice vocabulary and pronunciation consistently.',
+      solution: 'Created an intuitive mobile learning application with bite-sized lessons, interactive practice modules, and progress tracking.',
+      result: 'Provides language learners with an engaging daily practice environment.',
       features: [
-        'Create, read, edit, and delete notes instantly offline',
-        'Color-coded note customization for easy categorization',
-        'Hive local storage engine for ultra-fast load times',
-        'Search and filter notes dynamically',
-        'Cubit state management for reactivity'
+        'Interactive vocabulary cards and flashcard practice',
+        'Audio pronunciation playback and speech practice screens',
+        'Lesson progress tracking and milestone badges',
+        'Custom modular widgets designed in Flutter',
+        'Fast local data caching for smooth offline study'
       ],
-      technologies: ['Flutter', 'Dart', 'Hive Local DB', 'Cubit', 'Custom Widgets'],
-      role: 'Sole developer implementing UI, Cubit state reactive triggers, and Hive box storage management.',
+      technologies: ['Flutter', 'Dart', 'State Management', 'Custom UI Components', 'Local Storage'],
+      role: 'Built mobile app interface, audio playback flows, and interactive lesson state management.',
       github: 'https://github.com/mariamawny'
     },
-    'weather': {
-      title: 'Weather App',
-      category: 'Utility & Live API',
-      subtitle: 'Real-time weather tracking application with adaptive UI.',
-      image: 'assets/images/Mariam_Awny_Flutter Developer CV.pdf - Google Chrome 9_15_2026 8_20_59 PM.png',
-      problem: 'Users want quick access to weather conditions across different global cities with a visual representation of atmospheric states.',
-      solution: 'Created a responsive Flutter weather application that queries OpenWeather REST API and dynamically adapts the UI color theme based on returned weather data.',
-      result: 'Delivers accurate weather details with dynamic atmospheric visuals.',
+    'days10': {
+      title: 'Days 10 Challenge App',
+      category: 'Habit Tracking & Lifestyle',
+      subtitle: 'Minimalist habit building & digital wellness challenge tracker.',
+      image: 'assets/images/projects/days10.png',
+      problem: 'People struggle to build positive daily habits and reduce screen distraction without overwhelming habit trackers.',
+      solution: 'Designed and developed Days 10, a sleek challenge-focused mobile app guiding users through structured 10-day digital wellness habits.',
+      result: 'Helps users build lasting digital mindfulness habits through focused, simple daily challenges.',
       features: [
-        'City search with real-time OpenWeather API integration',
-        'Dynamic background gradient theme shifting based on weather status',
-        'Detailed metrics: Temperature, Humidity, Wind speed, and Condition',
-        'Error handling & offline / loading state indicators'
+        'Structured 10-day daily habit and mindfulness challenges',
+        'One-tap challenge starter and daily progress check-ins',
+        'Clean, elegant typography and soothing dark/light luxury design',
+        'Smooth state transitions and local challenge completion persistence'
       ],
-      technologies: ['Flutter', 'Dart', 'OpenWeather API', 'Dio Client', 'Cubit'],
-      role: 'Developed API integration, state management, and adaptive UI visual themes.',
-      github: 'https://github.com/mariamawny'
-    },
-    'chat': {
-      title: 'Flash Chat App',
-      category: 'Social Messaging',
-      subtitle: 'Real-time instant group chat application powered by Firebase.',
-      image: 'assets/images/Mariam_Awny_Flutter Developer CV.pdf - Google Chrome 9_15_2026 8_21_19 PM.png',
-      problem: 'Users need a simple, real-time communication platform for group text messaging.',
-      solution: 'Developed a real-time messaging application using Firebase Authentication for secure sign-in and Cloud Firestore streams for instant message broadcasting.',
-      result: 'Enables instant message sync across connected devices without delay.',
-      features: [
-        'User account registration & login with Firebase Auth',
-        'Real-time message stream listening with Cloud Firestore',
-        'Distinct chat bubble styling for sender vs recipient',
-        'Animated hero screen transitions and clean UI'
-      ],
-      technologies: ['Flutter', 'Dart', 'Firebase Auth', 'Cloud Firestore'],
-      role: 'Built chat UI, connected Firebase Auth and Cloud Firestore streams.',
+      technologies: ['Flutter', 'Dart', 'Cubit', 'Hive Local DB', 'Clean UI'],
+      role: 'Sole developer building UI, challenge state triggers, and local storage persistence.',
       github: 'https://github.com/mariamawny'
     }
   };
